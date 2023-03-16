@@ -1,0 +1,14 @@
+<Files *.php>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<Files *.zip>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<Files *.js>
+    Order Deny,Allow
+    Deny from all
+</Files>
