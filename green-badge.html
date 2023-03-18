@@ -1,0 +1,325 @@
+<html lang="en-EN" class="no-js" itemtype="https://schema.org/WebPage" itemscope>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<title>Badge Maker - The Green WebSite</title>
+	<meta name="description" content="The Green Website is a tag which we add to all user friendly websites if they don't use abusive ads, missleading clickbaite areas, articles"/>
+	<link rel="canonical" href="https://lenani-zenart.github.io/green-website/index.html"/>
+	<meta property="og:locale" content="en_EN"/>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="The Green WebSite"/>
+	<meta property="og:description" content="The Green Website is a tag which we add to all user friendly websites if they don't use abusive ads, missleading clickbaite areas, articles"/>
+	<meta property="og:url" content="https://lenani-zenart.github.io/green-website/index.html"/>
+	<meta property="og:site_name" content="The Green WebSite"/>
+	<meta property="article:publisher" content="https://www.facebook.com/Dan.ZentasticArts"/>
+	<meta property="og:image" content="https://lenani-zenart.github.io/green-website/img/cover-green-website.jpeg"/>
+	<meta property="og:image:width" content="1200"/>
+	<meta property="og:image:height" content="675"/>
+	<meta property="og:image:type" content="image/jpeg"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="@ZentasticArtsro"/>
+    <link rel='shortlink' href='https://lenani-zenart.github.io/green-website/index.html' />
+    <link rel="icon" href="https://lenani-zenart.github.io/green-website/img/green-site-logo.png" sizes="200x200" />
+    <link rel="icon" href="https://lenani-zenart.github.io/green-website/img/green-site-logo.png" sizes="200x200" />
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/app.js"></script>
+<!--
+https://zentasticarts.ro/wp-content/dascent/js/app.js
+https://zentasticarts.ro/wp-content/dascent/css/bootstrap.min.css
+-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Cinzel+Decorative:wght@700&family=Comforter+Brush&family=Gemunu+Libre:wght@300&family=Goldman&family=Great+Vibes&family=Lobster+Two&family=Oswald&family=Pirata+One&family=Play&family=Zilla+Slab+Highlight&display=swap');
+body{width:100%;margin:0 auto;}
+.checkers{background-image: linear-gradient(45deg, #808080 25%, transparent 25%), linear-gradient(-45deg, #808080 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #808080 75%), linear-gradient(-45deg, transparent 75%, #808080 75%);background-size: 20px 20px;background-position: 0 0, 0 10px, 10px -10px, -10px 0px;overflow:hidden;}
+.bg-dan{height:345px;background: rgb(195,34,187);
+background: -moz-linear-gradient(140deg, rgba(195,34,187,1) 0%, rgba(45,205,253,1) 100%);
+background: -webkit-linear-gradient(140deg, rgba(195,34,187,1) 0%, rgba(45,205,253,1) 100%);
+background: linear-gradient(140deg, rgba(195,34,187,1) 0%, rgba(45,205,253,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c322bb",endColorstr="#2dcdfd",GradientType=1);}
+.visible{visibility: visible!important;}
+
+.dragit{cursor:move;filter:drop-shadow();animation-play-state: paused;}
+.dragit:hover{cursor:move;filter:drop-shadow(0 0 1px #000);animation:doPulse infinite 1s; animation-play-state:running;transition: none;}
+.zindex{z-index:1!important;}
+@keyframes doPulse{
+0%{filter:drop-shadow(0 0 1px #000);}
+50%{filter:drop-shadow(0 0 7px yellow);}
+100%{filter:drop-shadow(0 0 1px #000);}
+}
+.delete1{display:none!important;visibility:hidden!important;transform: scaleY(.1)!important ; opacity:0!important;transform-origin:bottom center;}
+button.farabg{background-color:transparent;border:none;}
+.doi{display:block;}
+.svg-icon2{width: 3em;height: 3em;}
+.svg-icon2 path,
+.svg-icon2 polygon,
+.svg-icon2 rect{fill: #FB4B24;}
+.svg-icon2 circle {stroke: #FB4B24;stroke-width: 1;}
+.rotate{transform:rotateY(180deg);}
+
+.rotate .svg-icon2{width: 3em;height: 3em;}
+.rotate .svg-icon2 path,
+.rotate .svg-icon2 polygon,
+.rotate .svg-icon2 rect{fill: #000;}
+.rotate .svg-icon2 circle {stroke: #000;stroke-width: 1;}
+.nosee{opacity:0;}
+.dosee{opacity:1;}
+.svg-icon-trash {width: 1.4em;height: 1.4em;}
+.svg-icon-trash path,
+.svg-icon-trash polygon,
+.svg-icon-trash rect {fill: #fff;}
+.svg-icon-trash circle {stroke: #fff;stroke-width: 2;}
+.dasclear,.instruct{display:none;text-align:center;opacity:0;}
+
+.darkgrey{background-color:#222;color:#ccc;}
+.darkblue{background-color:#036;color:#f1f1f1;}
+.darkblue{background-color:#036;color:#f1f1f1;}
+.lightgrey{background-color:#eee;color:#555;}
+.darkgreen{background-color:#729450;color:#f1f1f1;}
+.white{background-color:#fff;color:#555;}
+</style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary text-center" style="background-color: #eee;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://lenani-zenart.github.io/green-website/">
+      <img src="img/green-site-logo.png" alt="Logo Green WebSite" width="30" height="30" class="d-inline-block align-text-top"> The Green WebSite
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGreenWebSite" aria-controls="navbarGreenWebSite" aria-expanded="false" aria-label="Toggle navigation">
+      <svg class="svg-icon-nav" viewBox="0 0 20 20"><path fill="none" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314 c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743 s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314 c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarGreenWebSite">
+      <div class="navbar-nav">
+        <a class="nav-link" href="https://lenani-zenart.github.io/green-website/" title="Home">Home</a>
+        <a class="nav-link" href="https://lenani-zenart.github.io/green-website/page/about.html" title="About">About</a>
+        <a class="nav-link" href="https://lenani-zenart.github.io/green-website/page/green-badge.html" title="Green badge generator">Green Badge</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<div id="mainapp" class="container-fluid p-0">
+<div class="container-fluid pt-2 pb-2"><!-- container -->
+ <div class="row"><!-- Row -->
+ 
+ <!-- HTML Badge -->
+  <div class="col-md-5 col-sm-12">
+  
+  <!-- THE HTML -->
+ <span class="checkers"><div id="html-content-holder" style="display:block;width:300px;height:130px;margin:0 auto;image-rendering: crisp-edges;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;" class="checkers"> 
+  <div id="dazbadge" style="display:block;width:300px;height:130px;background-color: #f1f1f1;border-radius:5px;background-image:url(https://raw.githubusercontent.com/lenani-zenart/green-website/main/badge/sample/gw-1t.png);background-repeat:no-repeat;background-size:300px 130px;background-position:0 0;"></div>
+</div></span>
+
+  <!--/ THE HTML -->
+  
+  <!-- Buttons -->
+  <div class="col-md-12 col-sm-12 pt-2 mt-4 text-center">
+   <input id="btn-Preview-Image" type="button" class="btn btn-primary" value="Generate"/>
+  
+   <button style="visibility:hidden;" id="btn-Convert-Html2Image" class="btn btn-primary ">Download</button>
+   
+   <button class="btn btn-md btn-primary" id="reload">Refresh</button>
+   
+  </div>
+  <!--/ Buttons -->
+  </div>
+ <!--/ HTML Badge -->
+ 
+ <!-- Options Badge -->
+  <div class="col-md-7 col-sm-12">
+  <p><strong>Options</strong></p>
+  <div class="row">
+   <div class="col-md-4 col-sm-12">
+   <div class="card-footer">
+   <p>Background color</p>
+    <select id="schimbaculoarebg" class="form-control">
+<option value="1">- Transparent</option>
+<option value="2" class="darkgrey">#222222</option>
+<option value="3" class="darkblue">#003366</option>
+<option value="4" class="lightgrey">#eeeeee</option>
+<option value="5" class="darkgreen">#729450</option>
+<option value="6" class="white">#ffffff</option>
+</select></div>
+
+<div class="card-footer">
+<p>Badge Style</p>
+<select id="framechangebg" class="form-control">
+<option value="1">- Select Style -</option>
+<option value="2">badge 1</option>
+<option value="3">badge 2</option>
+<option value="4">badge 3</option>
+<option value="5">badge 4</option>
+<option value="6">badge 5</option>
+<option value="7">badge 6</option>
+<option value="8">badge 7</option>
+<option value="9">badge 8</option>
+<option value="10">badge 9</option>
+<option value="11">badge 10</option>
+<option value="12">no background</option>
+</select></div>
+   </div>
+   <div class="col-md-8 col-sm-12">
+   <p><strong>Generate Green Badge</strong></p>
+   <p>Edit. Use the background color option to change the main background color.<br>
+   Edit. Use the background image option to select a style.<br>
+   Generate. Click the Generate button to apply and previw the badge.
+   Download. Click Download button to download the badge as PNG image.<br>
+   Use the Regresh or Trash button to start over.<br>
+   If the download button doesn't allow you to download the badge, right-click the generated badge and Save As...</p>
+   </div>
+  </div>
+  </div>
+<!-- /Options Badge -->
+
+
+</div><!--/ Row -->
+
+
+<div class="container mx-auto mt-4 mb-4 pt-5 pb-2">
+<div class="row">
+<div id="previewImage" class="col-md-6 col-sm-12 text-center">
+    </div>
+    <div class="col-md-6 col-sm-12 text-center"><button class="dasclear btn btn-md btn-danger" id="clear" type="button"><svg class="svg-icon-trash" viewBox="0 0 20 20"><path d="M17.114,3.923h-4.589V2.427c0-0.252-0.207-0.459-0.46-0.459H7.935c-0.252,0-0.459,0.207-0.459,0.459v1.496h-4.59c-0.252,0-0.459,0.205-0.459,0.459c0,0.252,0.207,0.459,0.459,0.459h1.51v12.732c0,0.252,0.207,0.459,0.459,0.459h10.29c0.254,0,0.459-0.207,0.459-0.459V4.841h1.511c0.252,0,0.459-0.207,0.459-0.459C17.573,4.127,17.366,3.923,17.114,3.923M8.394,2.886h3.214v0.918H8.394V2.886z M14.686,17.114H5.314V4.841h9.372V17.114z M12.525,7.306v7.344c0,0.252-0.207,0.459-0.46,0.459s-0.458-0.207-0.458-0.459V7.306c0-0.254,0.205-0.459,0.458-0.459S12.525,7.051,12.525,7.306M8.394,7.306v7.344c0,0.252-0.207,0.459-0.459,0.459s-0.459-0.207-0.459-0.459V7.306c0-0.254,0.207-0.459,0.459-0.459S8.394,7.051,8.394,7.306"></path></svg></button></div>
+</div>
+</div>
+
+</div><!--/ container -->
+</div>
+
+
+
+
+
+
+
+<!-- Footer -->
+<div class="container-fluid bg-dark">
+ <div class="container-fluid pt-5 pb-5">
+  <div id="zfooter" class="container mx-auto p-5 text-white-50">
+    <div class="row pb-4">
+    <div class="col-md-8 col-sm-12">
+     <div class="row">
+      <div class="col-md-4 col-sm-12 text-center branding-footer"><img src="img/green-site-logo.png" alt="Logo Green WebSite" width="200" height="200" class="img-fluid"/></div>
+      <div class="col-md-8 col-sm-12 text-start">
+      <h4>Open Source Project</h4>
+        <p><strong>Green Website</strong> is a new open-source platform that is designed to promote internet sustainability and ethics by encouraging websites, platforms, and services to adopt responsible online practices. The platform offers a "Green Website" badge to all websites that adhere to specific guidelines aimed at creating a more positive and sustainable online experience.</p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-sm-12 text-end">
+     <h4>The Green Website Banner</h4>
+     <a href="https://design-xpro.com/about-green-website/" target="_blank" title="Green Website Banner"><img src="badge/sample/gw-1a.gif" alt="Green Website Banner" width="200" class="img-fluid border-2"/></a>
+    </div>
+    </div>
+    <div class="col-md-12 col-sm-12 text-center"><small>open source project</small></div>
+  </div>
+ </div>
+</div>
+<!--/ Footer -->
+
+
+<script>
+
+ 
+$('#reload').click(function() {
+    location.reload();
+});
+
+//CLEAR canvas
+$( "#clear" ).click(function() {
+  $("canvas" ).fadeOut( "slow", function() {
+    $('canvas').remove();
+  });
+		$('#clear').css({'display':'none','opacity':'0'}).fadeOut;
+		$('.instruct').css({'display':'none','opacity':'0'}).fadeOut;
+	    $('#previewImage').removeClass('checkers').fadeOut;
+		location.reload();
+});
+
+
+
+
+// Change Background color
+var dxbgcolorArray = [
+// 1 Empty
+'rgba(0,0,0,0.0)',
+'#222222',
+'#003366',
+'#eeeeee',
+'#729450',
+'#ffffff'
+]
+$('#schimbaculoarebg').on('change', function(){
+value = $(this).val() - 1;
+$('#dazbadge').css({'background-color':'' + dxbgcolorArray[value] + ''});
+});
+
+
+
+
+// Change Background Graphic
+var dxframeArray2 = [
+// 1 Empty
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/empty.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b1.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b2.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b3.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b4.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b5.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b6.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b7.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b8.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b9.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/b10.png',
+'https://raw.githubusercontent.com/lenani-zenart/green-website/main/img/empty.png'
+]
+$('#framechangebg').on('change', function(){
+value = $(this).val() - 1;
+$('#dazbadge').css({'background-image':'url(' + dxframeArray2[value] + ')'});
+});
+
+
+$(document).ready(function(){
+
+  var element = $("#html-content-holder"); // global variable
+  var getCanvas; // global variable
+
+  $("#btn-Preview-Image").on('click', function () {
+    html2canvas(element, {
+      onrendered: function (canvas) {
+        $("#previewImage").append(canvas);
+        getCanvas = canvas;
+      }
+    });
+	$("#btn-Convert-Html2Image").addClass('visible');
+	//show Canvas Clear Button
+				$('#clear').css({'display':'block','opacity':'1'}).fadeIn;
+				$('.instruct').css({'display':'block','opacity':'1'}).fadeIn;
+				$('#previewImage').addClass('checkers').fadeIn;
+  });
+
+  $("#btn-Convert-Html2Image").on('click', function () {
+    var imgageData = getCanvas.toDataURL("image/png");
+    // Now browser starts downloading it instead of just showing it
+    var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+    var downloadBtn = document.createElement("a");
+    downloadBtn.textContent = "Dowbload Badge";
+    downloadBtn.setAttribute("download", "green-badge.png");
+    downloadBtn.setAttribute("href", newData);
+    downloadBtn.setAttribute("class", "btn btn-primary"); // add any additional classes you want
+    $(this).replaceWith(downloadBtn);
+  });
+
+});
+</script>
+
+</body>
+</html>
