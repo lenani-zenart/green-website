@@ -311,7 +311,7 @@ $(document).ready(function(){
     // Now browser starts downloading it instead of just showing it
     var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
     var downloadBtn = document.createElement("a");
-    downloadBtn.textContent = "Dowbload Badge";
+    downloadBtn.textContent = "Download Badge";
     downloadBtn.setAttribute("download", "green-badge.png");
     downloadBtn.setAttribute("href", newData);
     downloadBtn.setAttribute("class", "btn btn-primary"); // add any additional classes you want
